@@ -1,4 +1,4 @@
-namespace AccessMasterObjectSolution.Module {
+﻿namespace AccessMasterObjectSolution.Module {
 	partial class AccessMasterObjectSolutionModule {
 		/// <summary> 
 		/// Required designer variable.
@@ -27,7 +27,6 @@ namespace AccessMasterObjectSolution.Module {
 			// AccessMasterObjectSolutionModule
 			// 
 			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.SystemModule.SystemModule));
-			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule));
 		}
 
 		#endregion
