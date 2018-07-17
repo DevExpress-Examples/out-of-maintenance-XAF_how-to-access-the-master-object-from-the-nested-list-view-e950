@@ -27,7 +27,6 @@
             ' AccessMasterObjectSolutionModule
             ' 
             Me.RequiredModuleTypes.Add(GetType(DevExpress.ExpressApp.SystemModule.SystemModule))
-            Me.RequiredModuleTypes.Add(GetType(DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule))
         End Sub
 
         #End Region

@@ -26,28 +26,22 @@
             Me.module1 = New DevExpress.ExpressApp.SystemModule.SystemModule()
             Me.module2 = New DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule()
             Me.module3 = New AccessMasterObjectSolution.Module.AccessMasterObjectSolutionModule()
-            Me.module5 = New DevExpress.ExpressApp.Validation.ValidationModule()
-            Me.module6 = New DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule()
-            Me.module7 = New DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule()
-            Me.securityModule1 = New DevExpress.ExpressApp.Security.SecurityModule()
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
-            ' 
-            ' module5
-            ' 
-            Me.module5.AllowValidationDetailsAccess = True
+            CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
             ' 
             ' AccessMasterObjectSolutionWindowsFormsApplication
             ' 
             Me.ApplicationName = "AccessMasterObjectSolution"
+            Me.CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema
             Me.Modules.Add(Me.module1)
             Me.Modules.Add(Me.module2)
-            Me.Modules.Add(Me.module6)
             Me.Modules.Add(Me.module3)
-            Me.Modules.Add(Me.module5)
-            Me.Modules.Add(Me.module7)
-            Me.Modules.Add(Me.securityModule1)
-'            Me.DatabaseVersionMismatch += New System.EventHandler(Of DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs)(Me.AccessMasterObjectSolutionWindowsFormsApplication_DatabaseVersionMismatch)
-            DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.UseOldTemplates = False
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.AccessMasterObjectSolutionWindowsFormsApplication_DatabaseVersionMismatch);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.CustomizeLanguagesList += new System.EventHandler<DevExpress.ExpressApp.CustomizeLanguagesListEventArgs>(this.AccessMasterObjectSolutionWindowsFormsApplication_CustomizeLanguagesList);
+
+            CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
         End Sub
 
@@ -56,9 +50,5 @@
         Private module1 As DevExpress.ExpressApp.SystemModule.SystemModule
         Private module2 As DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule
         Private module3 As AccessMasterObjectSolution.Module.AccessMasterObjectSolutionModule
-        Private module5 As DevExpress.ExpressApp.Validation.ValidationModule
-        Private module6 As DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule
-        Private module7 As DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule
-        Private securityModule1 As DevExpress.ExpressApp.Security.SecurityModule
     End Class
 End Namespace
